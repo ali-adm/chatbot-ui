@@ -77,7 +77,7 @@ docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 ghcr.io/mckaywrigley/chatbot-
 **1. Clone Repo**
 
 ```bash
-git clone -b legacy https://github.com/mckaywrigley/chatbot-ui.git
+git clone -b legacy https://github.com/ali-adm/chatbot-ui.git chatbot-ui-legacy
 ```
 
 **2. Install Dependencies**
@@ -115,7 +115,7 @@ When deploying the application, the following environment variables can be set:
 | Environment Variable  | Default value                  | Description                                             |
 | --------------------- | ------------------------------ | ------------------------------------------------------- |
 | OPENAI_API_KEY        |                                | The default API key used for authentication with OpenAI |
-| DEFAULT_MODEL         | `gpt-3.5-turbo`                | The default model to use on new conversations           |
+| DEFAULT_MODEL         | `GPT-4o-mini`                | The default model to use on new conversations           |
 | DEFAULT_SYSTEM_PROMPT | [see here](utils/app/const.ts) | The defaut system prompt to use on new conversations    |
 
 If you do not provide an OpenAI API key with `OPENAI_API_KEY`, users will have to provide their own key.
