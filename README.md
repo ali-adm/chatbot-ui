@@ -1,3 +1,31 @@
+# Fork from Chatbot UI Legacy version.
+
+Differences from the original:
+- [x] Added **gpt-4o** model
+- [x] Added model **gpt-4o-mini**
+- [x] Added cross-env to change the operating port to **3030**
+
+Fork was made from here:   
+https://github.com/mckaywrigley/chatbot-ui/tree/legacy
+
+## License Compliance
+
+The original Chatbot-UI is published under the MIT license, which allows you to use, copy, modify, merge, publish, distribute, sublicense and even sell the existing code - subject to copyright.
+
+## Why was the fork made?
+
+This is an outdated version of the interface that is not being developed. The official repository has moved to version 2.0, which requires installation of Supabase, Docker and many more system resources. 
+This version with all dependencies takes up about 874 MB, and does not require anything other than node.js. 
+
+However, such simplicity has disadvantages. The main difference between this version and v2.0 is that it uses local browser storage to store data, and this is not the best solution for several reasons:
+- Security issues
+- Limited storage space
+- Limits multimodal use options
+
+I warned you.
+
+But much easier! Let's go!
+
 # Chatbot UI
 
 Chatbot UI is an advanced chatbot kit for OpenAI's chat models built on top of [Chatbot UI Lite](https://github.com/mckaywrigley/chatbot-ui-lite) using Next.js, TypeScript, and Tailwind CSS.
@@ -45,6 +73,7 @@ Modify the sidebar interface in `components/Sidebar`.
 
 Modify the system prompt in `utils/index.ts`.
 
+<!--
 ## Deploy
 
 **Vercel**
@@ -71,6 +100,7 @@ Pull from ghcr:
 ```
 docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 ghcr.io/mckaywrigley/chatbot-ui:main
 ```
+-->
 
 ## Running Locally
 
@@ -123,4 +153,6 @@ If you don't have an OpenAI API key, you can get one [here](https://platform.ope
 
 ## Contact
 
-If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/mckaywrigley).
+As far as possible, I will implement the declared but not implemented features, and add my own new ones. You also need to configure deployment and docker. 
+
+If you have any questions, please ask them in the **"Problems"** section, I don't think anyone will have many questions. And if there are, we will open discussions! I will be glad to communicate. Come to the light!
