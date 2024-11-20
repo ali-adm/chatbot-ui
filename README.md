@@ -3,7 +3,7 @@
 Differences from the original:
 - [x] Added **gpt-4o** model
 - [x] Added model **gpt-4o-mini**
-- [x] Added cross-env to change the operating port to **3030**
+- [x] Added cross-env to change the operating port to **3030**,and the ability to change the port in package.json and .env
 - [x] Added application local autostart in windows as a service via NSSM. (see win_autorun_Readme.md)
 
 Fork was made from here:   
@@ -138,6 +138,9 @@ npm run dev
 **5. Use It**
 
 You should be able to start chatting.
+
+6. **(Optional) Set up autorun**  
+You can configure an application to start locally as a Windows service. Detailed settings for autorun are described in the file win_autorun_Readme.md
 
 ## Configuration
 
