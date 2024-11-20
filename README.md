@@ -4,6 +4,7 @@ Differences from the original:
 - [x] Added **gpt-4o** model
 - [x] Added model **gpt-4o-mini**
 - [x] Added cross-env to change the operating port to **3030**
+- [x] Added application local autostart in windows as a service via NSSM. (see win_autorun_Readme.md)
 
 Fork was made from here:   
 https://github.com/mckaywrigley/chatbot-ui/tree/legacy
